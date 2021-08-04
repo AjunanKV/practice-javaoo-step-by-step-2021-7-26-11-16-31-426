@@ -16,8 +16,8 @@ public class Student extends Person {
         Klass = klass;
     }
 
-//    @Override
-//    public String introduce() {
-//        return super.introduce()+"Class "+Klass+".";
-//    }
+    @Override
+    public String introduce() {
+        return super.introduce()+"Class "+Klass+".";
+    }
 }
