@@ -6,4 +6,8 @@ public class Klass {
     public Klass(int klass) {
         Klass = klass;
     }
+
+    public int getNumber() {
+        return Klass;
+    }
 }
