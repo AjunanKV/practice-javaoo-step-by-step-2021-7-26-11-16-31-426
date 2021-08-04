@@ -1,6 +1,15 @@
 package practice06;
 
 public class Klass {
-    public Klass(int i) {
+    private int Klass;
+
+    public Klass(int klass) {
+        Klass = klass;
     }
+
+    public int getNumber() {
+        return Klass;
+    }
+
+
 }
