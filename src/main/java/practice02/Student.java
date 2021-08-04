@@ -34,4 +34,9 @@ public class Student {
     public void setKlass(int klass) {
         Klass = klass;
     }
+
+    String introduce()
+    {
+        return "I am a Student. I am at Class "+Klass+".";
+    }
 }
