@@ -12,4 +12,16 @@ public class Student {
         this.age = age;
         this.klass = klass;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public Klass getKlass() {
+        return klass;
+    }
 }
