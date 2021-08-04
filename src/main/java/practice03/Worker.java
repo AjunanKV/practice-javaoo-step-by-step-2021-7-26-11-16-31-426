@@ -24,4 +24,8 @@ public class Worker {
     public void setAge(int age) {
         this.age = age;
     }
+
+    String introduce() {
+        return "I am a Worker. I have a job.";
+    }
 }
