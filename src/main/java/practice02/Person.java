@@ -1,5 +1,7 @@
 package practice02;
 
+import java.text.MessageFormat;
+
 public class Person {
     private String name;
     private int age;
@@ -27,6 +29,6 @@ public class Person {
 
     String introduce()
     {
-        return "My name is "+name+"." + " I am "+age+" years old.";
+        return MessageFormat.format("My name is {0}. I am {1} years old.", name, age);
     }
 }

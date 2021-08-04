@@ -1,5 +1,7 @@
 package practice05;
 
+import java.text.MessageFormat;
+
 public class Teacher extends Person {
     private int Klass;
 
@@ -23,9 +25,9 @@ public class Teacher extends Person {
     public String introduce() {
         String prefix = super.introduce()+" I am a Teacher. ";
         if(Klass!=0)
-            return prefix+"I teach Class "+Klass+".";
+            return MessageFormat.format("{0}I teach Class {1}.",prefix,Klass);
         else
-            return prefix+"I teach No Class.";
+            return  MessageFormat.format("{0}I teach No Class.",prefix);
 
     }
 

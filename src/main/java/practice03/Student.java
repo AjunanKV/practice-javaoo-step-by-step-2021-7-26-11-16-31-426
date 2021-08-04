@@ -1,5 +1,7 @@
 package practice03;
 
+import java.text.MessageFormat;
+
 public class Student extends Person{
     private int Klass;
 
@@ -17,6 +19,6 @@ public class Student extends Person{
     }
     public String introduce()
     {
-        return "I am a Student. I am at Class "+Klass+".";
+        return MessageFormat.format("I am a Student. I am at Class {0}.",Klass);
     }
 }

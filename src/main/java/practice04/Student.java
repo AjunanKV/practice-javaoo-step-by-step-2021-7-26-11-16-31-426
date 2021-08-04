@@ -1,5 +1,7 @@
 package practice04;
 
+import java.text.MessageFormat;
+
 public class Student extends Person {
     private int Klass;
 
@@ -18,6 +20,6 @@ public class Student extends Person {
 
     @Override
     public String introduce() {
-        return super.introduce()+"Class "+Klass+".";
+        return  MessageFormat.format(super.introduce()+"Class {0}.",Klass);
     }
 }
