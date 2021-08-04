@@ -7,7 +7,7 @@ public class Klass {
         Klass = klass;
     }
 
-    public int getNumber() {
+        public int getNumber() {
         return Klass;
     }
 
