@@ -1,27 +1,22 @@
 package practice07;
 
-public class Student {
-    private int id;
-    private String name;
-    private int age;
+import java.text.MessageFormat;
+
+public class Student extends Person{
     private Klass klass;
 
     public Student(int id, String name, int age, Klass klass) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
+        super(id, name, age);
         this.klass = klass;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
 
     public Klass getKlass() {
         return klass;
+    }
+
+    @Override
+    public String introduce() {
+        return MessageFormat.format("{0} I am a Student. I am at {1}.",super.introduce(),klass.getDisplayName());
     }
 }
