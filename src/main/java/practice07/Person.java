@@ -1,5 +1,7 @@
 package practice07;
 
+import java.text.MessageFormat;
+
 public class Person {
     private int id;
     private String name;
@@ -34,4 +36,16 @@ public class Person {
     public void setAge(int age) {
         this.age = age;
     }
-}
+
+    public String introduce() {
+        return MessageFormat.format("My name is {0}. I am {1} years old.", name, age);
+    }
+    @Override
+        public boolean equals(Object person)
+    {
+        return person instanceof Person && ((Person) person).getId() == this.id;
+    }
+        //check if instantiated in the class (if same datatype)
+        // if (person instanceof Person) { return ((Person) person).getId() == this.getId();  } return false; }
+    }
+
