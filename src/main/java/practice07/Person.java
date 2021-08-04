@@ -40,12 +40,13 @@ public class Person {
     public String introduce() {
         return MessageFormat.format("My name is {0}. I am {1} years old.", name, age);
     }
+
     @Override
-        public boolean equals(Object person)
-    {
-        return person instanceof Person && ((Person) person).getId() == this.id;
+    public boolean equals(Object person) {
+        if (person instanceof Person) {
+            return ((Person) person).getId() == this.getId();
+        }
+        return false;
     }
-        //check if instantiated in the class (if same datatype)
-        // if (person instanceof Person) { return ((Person) person).getId() == this.getId();  } return false; }
-    }
+}
 
