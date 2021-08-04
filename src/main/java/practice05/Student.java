@@ -15,4 +15,9 @@ public class Student extends Person{
     public void setKlass(int klass) {
         Klass = klass;
     }
+
+    @Override
+    public String introduce() {
+        return super.introduce()+" I am a Student. I am at Class "+Klass+".";
+    }
 }
