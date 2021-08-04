@@ -3,6 +3,9 @@ package practice05;
 public class Teacher extends Person {
     private int Klass;
 
+    public Teacher(String name, int age) {
+        super(name, age);
+    }
     public Teacher(String name, int age, int klass) {
         super(name, age);
         Klass = klass;
@@ -22,7 +25,7 @@ public class Teacher extends Person {
         if(Klass!=0)
             return prefix+"I teach Class "+Klass+".";
         else
-            return prefix+"I teach no Class";
+            return prefix+"I teach No Class.";
 
     }
 
