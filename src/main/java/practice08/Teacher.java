@@ -30,5 +30,5 @@ public class Teacher extends Person{
         return MessageFormat.format("{0} I am a Teacher. I {1}{2}.", super.introduce(),
                 ((student.getKlass().getNumber()==klass.getNumber())?"teach ":"don't teach "),student.getName());
     }
-    //
+    
 }
