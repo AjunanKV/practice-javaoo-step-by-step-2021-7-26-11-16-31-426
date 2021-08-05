@@ -32,7 +32,7 @@ public class Person {
         }
         return false;
     }
-//    public String introduce() {
-//        return MessageFormat.format("My name is {0}. I am {1} years old.", name, age);
-//    }
+    public String introduce() {
+        return MessageFormat.format("My name is {0}. I am {1} years old.", name, age);
+    }
 }
