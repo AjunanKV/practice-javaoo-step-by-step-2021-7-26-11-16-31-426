@@ -20,15 +20,15 @@ public class Klass {
         return "Class "+Klass;
     }
 
-//    public void assignLeader(Student leader) {
-//        this.leader = leader;
-//        if(leader.getKlass().getNumber()!=this.Klass) {
-//            System.out.println("It is not one of us.\n");
-//        }
-//    }
-//    public Student getLeader() {
-//        return leader;
-//    }
+    public void assignLeader(Student leader) {
+        this.leader = leader;
+        if(leader.getKlass().getNumber()!=this.Klass) {
+            System.out.println("It is not one of us.\n");
+        }
+    }
+    public Student getLeader() {
+        return leader;
+    }
 //    public void appendMember(Student member) {
 //        if(member.getKlass().getNumber()==this.Klass)
 //        {
