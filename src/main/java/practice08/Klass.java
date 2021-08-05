@@ -5,7 +5,7 @@ import java.util.LinkedList;
 public class Klass {
     private int Klass;
     private Student leader;
-    private LinkedList<Student> members;
+ //   private LinkedList<Student> members;
 
     public Klass(int klass) {
         Klass = klass;
@@ -15,11 +15,11 @@ public class Klass {
     public int getNumber() {
         return Klass;
     }
-//    public String getDisplayName() {
-//
-//        return "Class "+Klass;
-//    }
-//
+    public String getDisplayName() {
+
+        return "Class "+Klass;
+    }
+
 //    public void assignLeader(Student leader) {
 //        this.leader = leader;
 //        if(leader.getKlass().getNumber()!=this.Klass) {
