@@ -12,9 +12,9 @@ public class Klass {
 //        members = new LinkedList<Student>();
     }
 
-//    public int getNumber() {
-//        return Klass;
-//    }
+    public int getNumber() {
+        return Klass;
+    }
 //    public String getDisplayName() {
 //
 //        return "Class "+Klass;
