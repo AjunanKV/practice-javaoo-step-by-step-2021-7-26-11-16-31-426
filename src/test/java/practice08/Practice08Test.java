@@ -18,12 +18,12 @@ public class Practice08Test {
         System.setOut(new PrintStream(outContent));
     }
 
-//    @Test
-//    public void should_person_have_id_name_and_age() throws Exception {
-//        Person person = new Person(1, "Tom", 21);
-//        assertThat(person.getName()).isEqualTo("Tom");
-//        assertThat(person.getAge()).isEqualTo(21);
-//    }
+    @Test
+    public void should_person_have_id_name_and_age() throws Exception {
+        Person person = new Person(1, "Tom", 21);
+        assertThat(person.getName()).isEqualTo("Tom");
+        assertThat(person.getAge()).isEqualTo(21);
+    }
 //
 //    @Test
 //    public void should_person_with_same_id_be_same_one() throws Exception {
