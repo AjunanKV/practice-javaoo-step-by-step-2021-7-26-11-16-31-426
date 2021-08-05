@@ -21,18 +21,22 @@ public class Klass {
     }
 
     public void assignLeader(Student leader) {
-        this.leader = leader;
-        if(leader.getKlass().getNumber()!=this.Klass) {
-            System.out.println("It is not one of us.\n");
+
+        if(leader.getKlass().getNumber()!=this.Klass) { //5 - 2
+
+            System.out.print("It is not one of us.\n");
         }
+        else
+            this.leader = leader;
     }
     public Student getLeader() {
         return leader;
     }
+
     public void appendMember(Student member) {
         if(member.getKlass().getNumber()==this.Klass)
         {
-            members.add(member);
+            members.add(member); //5
         }
     }
 
