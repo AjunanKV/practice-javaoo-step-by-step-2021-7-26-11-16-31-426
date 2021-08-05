@@ -25,13 +25,13 @@ public class Person {
         return age;
     }
 
-//    @Override
-//    public boolean equals(Object product) {
-//        if (product instanceof Person) {
-//            return ((Person) product).getId() == this.getId();
-//        }
-//        return false;
-//    }
+    @Override
+    public boolean equals(Object product) {
+        if (product instanceof Person) {
+            return ((Person) product).getId() == this.getId();
+        }
+        return false;
+    }
 //    public String introduce() {
 //        return MessageFormat.format("My name is {0}. I am {1} years old.", name, age);
 //    }
