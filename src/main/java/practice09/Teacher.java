@@ -30,4 +30,10 @@ public class Teacher extends Person{
                                 .collect(Collectors.joining(", "))):
                 (super.introduce()+ " I am a Teacher. I teach No Class.");
     }
+
+    public boolean isTeaching(Student student) {
+        return klasses
+                .stream()
+                .anyMatch(klass->klass.isIn(student));
+    }
 }

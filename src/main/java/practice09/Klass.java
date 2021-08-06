@@ -35,4 +35,8 @@ public class Klass {
       public void appendMember(Student member) {
         member.setKlass(this);
     }
+
+    public boolean isIn(Student student) {
+        return this.equals(student.getKlass());
+    }
 }
