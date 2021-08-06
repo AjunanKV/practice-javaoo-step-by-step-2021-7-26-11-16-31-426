@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class Klass {
     private int Klass;
-//    private Student leader;
+    private Student leader;
 //    private LinkedList<Student> members;
 
     public Klass(int klass) {
@@ -19,16 +19,18 @@ public class Klass {
         return "Class "+Klass;
     }
 
-//    public void assignLeader(Student leader) {
-//        this.leader = leader;
-//        if(leader.getKlass().getNumber()!=this.Klass) {
-//            System.out.println("It is not one of us.");
-//        }
-//        }
-//
-//    public Student getLeader() {
-//        return leader;
-//    }
+    public void assignLeader(Student leader) {
+        if(leader.getKlass().getNumber()==this.Klass) {
+            this.leader = leader;
+        }
+        else {
+            System.out.print("It is not one of us.\n");
+        }
+    }
+
+    public Student getLeader() {
+        return leader;
+    }
 //
 //    public void appendMember(Student member) {
 //        if(member.getKlass().getNumber()==this.Klass)
