@@ -14,10 +14,10 @@ public class Klass {
     public int getNumber() {
         return Klass;
     }
-//
-//    public String getDisplayName() {
-//        return "Class "+Klass;
-//    }
+
+    public String getDisplayName() {
+        return "Class "+Klass;
+    }
 
 //    public void assignLeader(Student leader) {
 //        this.leader = leader;
