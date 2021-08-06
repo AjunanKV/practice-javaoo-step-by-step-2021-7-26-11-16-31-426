@@ -17,11 +17,11 @@ public class Student extends Person{
     public void setKlass(Klass klass) {
         this.klass = klass;
     }
-    //    @Override
-//    public String introduce() {
-//        return MessageFormat.format("{0} I am a Student. I am {1}{2}.",
-//                super.introduce(),
-//                ((klass.getLeader() != null && klass.getLeader().getName().equals(super.getName()))?"Leader of Class ":"at Class "),
-//                klass.getNumber());
-//    }
+        @Override
+    public String introduce() {
+        return MessageFormat.format("{0} I am a Student. I am {1}{2}.",
+                super.introduce(),
+                ((klass.getLeader() != null && klass.getLeader().getName().equals(super.getName()))?"Leader of Class ":"at Class "),
+                klass.getNumber());
+    }
 }
