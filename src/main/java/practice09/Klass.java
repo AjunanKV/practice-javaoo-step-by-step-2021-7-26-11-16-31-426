@@ -5,7 +5,7 @@ import java.util.LinkedList;
 public class Klass {
     private int Klass;
     private Student leader;
-   private LinkedList<Student> members;
+    private LinkedList<Student> members;
 
     public Klass(int klass) {
         Klass = klass;
@@ -16,14 +16,13 @@ public class Klass {
     }
 
     public String getDisplayName() {
-        return "Class "+Klass;
+        return "Class " + Klass;
     }
 
     public void assignLeader(Student leader) {
-        if(leader.getKlass().getNumber()==this.Klass) {
+        if (leader.getKlass().getNumber() == this.Klass) {
             this.leader = leader;
-        }
-        else {
+        } else {
             System.out.print("It is not one of us.\n");
         }
     }
@@ -32,7 +31,7 @@ public class Klass {
         return leader;
     }
 
-      public void appendMember(Student member) {
+    public void appendMember(Student member) {
         member.setKlass(this);
     }
 

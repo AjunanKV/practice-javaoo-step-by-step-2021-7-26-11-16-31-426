@@ -135,7 +135,7 @@ public class Practice09Test {
     }
 
     @Test
-        public void should_teacher_isTeaching_return_false_when_the_student_is_not_in_all_the_classes_the_teacher_teaches() throws Exception {
+    public void should_teacher_isTeaching_return_false_when_the_student_is_not_in_all_the_classes_the_teacher_teaches() throws Exception {
         LinkedList<Klass> linkedList = new LinkedList<Klass>();
         linkedList.add(klass);
         Teacher tom = new Teacher(1, "Tom", 21, linkedList);
