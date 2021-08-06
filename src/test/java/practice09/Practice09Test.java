@@ -1,31 +1,30 @@
-//package practice09;
-//
-//import org.junit.jupiter.api.BeforeEach;
-//import org.junit.jupiter.api.Test;
-//
-//import java.io.ByteArrayOutputStream;
-//import java.io.PrintStream;
-//import java.util.LinkedList;
-//
-//import static org.assertj.core.api.Assertions.assertThat;
-//
-//public class Practice09Test {
-//    private Klass klass;
-//    private ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-//
-//    @BeforeEach
-//    public void setup() {
-//        klass = new Klass(2);
-//        System.setOut(new PrintStream(outContent));
-//    }
-//
-//    @Test
-//    public void should_person_have_id_name_and_age() throws Exception {
-//        Person person = new Person(1, "Tom", 21);
-//        assertThat(person.getName()).isEqualTo("Tom");
-//        assertThat(person.getAge()).isEqualTo(21);
-//    }
-//
+package practice09;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+public class Practice09Test {
+    private Klass klass;
+    private ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+
+    @BeforeEach
+    public void setup() {
+        klass = new Klass(2);
+        System.setOut(new PrintStream(outContent));
+    }
+
+    @Test
+    public void should_person_have_id_name_and_age() throws Exception {
+        Person person = new Person(1, "Tom", 21);
+        assertThat(person.getName()).isEqualTo("Tom");
+        assertThat(person.getAge()).isEqualTo(21);
+    }
+
 //    @Test
 //    public void should_person_with_same_id_be_same_one() throws Exception {
 //        Person person1 = new Person(1, "Tom", 21);
@@ -39,6 +38,7 @@
 //        String introduce = tom.introduce();
 //        assertThat(introduce).isEqualTo("My name is Tom. I am 21 years old.");
 //    }
+//
 //
 //    @Test
 //    public void should_class_have_a_number() throws Exception {
@@ -71,7 +71,7 @@
 //        klass.assignLeader(jerry);
 //        assertThat(klass.getLeader()).isEqualTo(jerry);
 //    }
-//
+////
 //    @Test
 //    public void should_student_have_name_age_and_class_number() throws Exception {
 //        Student tom = new Student(1, "Tom", 21, klass);
@@ -79,13 +79,13 @@
 //        assertThat(tom.getAge()).isEqualTo(21);
 //        assertThat(tom.getKlass()).isEqualTo(klass);
 //    }
-//
+////
 //    @Test
 //    public void should_student_introduce_with_class() throws Exception {
 //        Student tom = new Student(1, "Tom", 21, klass);
 //        assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Student. I am at Class 2.");
 //    }
-//
+////
 //    @Test
 //    public void should_student_introduce_itself_as_class_leader() throws Exception {
 //        Student tom = new Student(1, "Tom", 21, klass);
@@ -161,4 +161,4 @@
 //        Student jerry = new Student(1, "Jerry", 8, new Klass(2));
 //        assertThat(tom.introduceWith(jerry)).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I don't teach Jerry.");
 //    }
-//}
+}
